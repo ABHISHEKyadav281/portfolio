@@ -1,0 +1,1254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 99vw;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 999999999999999999999;
+    background-color: #fff;
+}
+
+.green {
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    position: relative;
+}
+
+.black h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black h1>span {
+    color: white;
+}
+
+#green {
+    font-family: 'Shadows Into Light', cursive;
+    color: springgreen;
+}
+
+nav {
+    width: 99vw;
+    height: 6.5vh;
+    background-color: rgb(4, 28, 34);
+    display: flex;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+}
+
+.navLeft {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.navLeft h2 {
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+span {
+    display: inline-block;
+    color: springgreen;
+}
+
+.navRight {
+    padding: 0 2vw;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navRight a {
+    text-decoration: none;
+    font-size: 1.6vw;
+    font-weight: 600;
+    font-family: gilroy;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: color cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.navRight a:hover {
+    color: springgreen;
+    font-size: 1.7vw;
+}
+
+/* =============p1============================= */
+
+.page1 {
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+    color: white;
+    padding: 2% 4%;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    cursor: none;
+}
+.port{
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    width: 50%;
+    display: none;
+    align-items: center;
+}
+.port h2 {
+    color: white;
+    font-size: 5vw;
+    font-weight: 600;
+}
+.cursor {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    opacity: 0;
+    mix-blend-mode: difference;
+    background-color: #fff;
+    /* opacity: .5; */
+    position: absolute;
+    z-index: 999999999;
+}
+
+.texts {
+    width: 550px;
+    flex-shrink: 0;
+    font-family: gilroy;
+    padding-top: 15%;
+}
+
+.texts h5 {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.texts h1 {
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+.texts h2 {
+    font-size: 2.3vw;
+    font-weight: 500;
+}
+
+.social {
+    display: flax;
+    gap: 40px;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    font-size: 3.5vw;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social i:hover {
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: springgreen;
+
+    /* color: springgreen; */
+}
+
+.button {
+    color: white;
+    width: 8vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    background-color: rgb(2, 220, 111);
+    border-radius: 30px;
+}
+
+.button:hover {
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: springgreen;
+    background-color: transparent;
+    border: 1px solid springgreen;
+    box-shadow: 1px 2px 4px springgreen;
+
+}
+
+.button p {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.rightpic {
+    margin-top: 3%;
+    width: 300px;
+    height: 90%;
+    flex-shrink: 0;
+}
+
+.rightpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: skew(-10deg); */
+}
+
+/* =============p2============================== */
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    padding: 5vw 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2 h2 {
+    color: white;
+    font-size: 2.4vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.serviceInfo {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.serviceInfo p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: gilroy;
+
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 4px;
+}
+
+.skillSection {
+    padding: 0;
+    padding-left: 5%;
+    margin-top: 5vh;
+    width: 100%;
+    height: 70vh;
+    color: #fff;
+    display: flex;
+    position: relative;
+    /* background-color: rgb(206, 77, 77); */
+}
+
+.skillType {
+    width: 50%;
+    height: 100%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+
+.icon {
+    width: 3vw;
+    height: 4vw;
+    margin-right: 1vw;
+    color: springgreen;
+    font-size: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#frontend {
+    transform: rotate(90deg);
+}
+
+.skillName {
+    display: flex;
+}
+
+.languages {
+    width: 45%;
+    height: 100%;
+    padding-left: 1.6vw;
+    position: relative;
+}
+
+#language1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#language2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+#language3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+.l {
+    width: 100%;
+    height: 10vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: rgb(185, 203, 83); */
+}
+
+.l h3 {
+    margin-left: 1.8vw;
+    font-size: 2.8vh;
+}
+
+.percentage {
+    padding: 0 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2vh;
+}
+
+progress {
+    width: 89%;
+    height: 3px;
+    background-color: springgreen;
+}
+
+progress::-webkit-progress-value {
+    background: springgreen;
+}
+
+.percentage p {
+    font-size: 1.5vw;
+}
+
+/* projects */
+
+.page3 {
+    width: 100vw;
+    height: 250vh;
+    color: white;
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page3>h2 {
+    color: white;
+    font-size: 2.4vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page3>h3 {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    font-size: 2.3vw;
+    padding: 3px 8px;
+}
+
+.Designs {
+    width: 100%;
+    height: 60vh;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.Designs::-webkit-scrollbar {
+    display: none;
+}
+
+.Designs .project {
+    width: 38%;
+    height: 90%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: .5vw -.5vw 2vw rgb(111, 93, 93);
+}
+
+.project .imgs {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.Animations {
+    width: 100%;
+    height: 60vh;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom: 2%;
+}
+
+.Animations::-webkit-scrollbar {
+    display: none;
+}
+
+.Animations .project {
+    width: 40%;
+    height: 92%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.project video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #000;
+}
+
+/* project mini */
+.projects-mini {
+    width: 100%;
+    height: 35vh;
+    display: none;
+}
+
+.slide {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.project-min {
+    position: relative;
+    width: 100%;
+    height: 6.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.project-min:nth-child(1) {
+    border-top: 1px solid rgb(255, 255, 255);
+
+}
+
+.project-min h3 {
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.project-min a {
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    color: springgreen;
+}
+
+.project-min a i {
+    color: springgreen;
+}
+
+.projects {
+    width: 100%;
+    height: 110vh;
+}
+
+.project-min:hover .slide {
+    width: 100%;
+}
+
+.project-min:hover h3 {
+    color: #000;
+}
+
+/* project */
+.projects .project {
+    width: 30%;
+    height: 42%;
+    display: inline-block;
+    margin: 2% 1.5%;
+
+}
+
+.projects .project:hover {
+    box-shadow: inset 5vw 0vw 2vw rgb(111, 93, 93);
+    transform: scale(1.15);
+}
+
+.projects .project .imgs {
+    width: 100%;
+    height: 78%;
+    background-color: #000;
+}
+
+.project .imgs>img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-position: center; */
+}
+
+.project h3 {
+    font-size: 2vw;
+}
+
+.project a {
+    text-decoration: none;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: springgreen;
+}
+
+/* ============ page 4============ */
+.page4 {
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.elips {
+    position: relative;
+    margin-top: 10%;
+    margin-left: -5%;
+    width: 110%;
+    height: 200%;
+    border-radius: 98%;
+    background-color: #313637b2;
+}
+
+.p4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.p4>h2 {
+    color: white;
+    font-size: 2.4vw;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details {
+    width: 100%;
+    height: 60vh;
+    margin-top: 5%;
+    display: flex;
+}
+
+.info {
+    width: 50%;
+    padding: 2% 5%;
+    height: 100%;
+}
+
+.info p {
+    margin: 2% 0%;
+    font-size: 1.3vw;
+}
+
+.b1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 2% 0%;
+}
+
+.b1 i {
+    font-size: 2.8vw;
+    color: springgreen;
+}
+.b1:hover i{
+    font-size: 2.9vw;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: springgreen;
+    color:transparent;
+}
+
+.b2 h4 {
+    font-size: 1.5vw;
+}
+
+.b2 p {
+    font-size: 1.4vw;
+}
+
+.message {
+    width: 50%;
+    padding: 2% 5%;
+    height: 100%;
+}
+
+.message input {
+    width: 49%;
+    height: 3vw;
+    border-radius: 9px;
+    outline: none;
+    background-color: rgb(59, 58, 58);
+    border: 0px;
+    margin-top: 10px;
+    color: white;
+    padding: 1px 3%;
+    font-size: 1.2vw;
+}
+
+#subj {
+    width: 100%;
+}
+
+.message textarea {
+    width: 100%;
+    height: 6vw;
+    border-radius: 9px;
+    outline: none;
+    background-color: rgb(59, 58, 58);
+    border: 0px;
+    margin-top: 10px;
+    color: white;
+    padding: 10px 3%;
+    font-size: 1.2vw;
+}
+
+#done {
+    width: 30%;
+    height: 3vw;
+    border-radius: 12px;
+    background-color: springgreen;
+    border: 0px;
+    margin-top: 10px;
+    padding: 1px 3%;
+    font-size: 1.2vw;
+}
+#done:hover{
+    font-size: 1.4vw;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: springgreen;
+    color:transparent;
+    background-color: transparent;
+    border: 1px solid springgreen;
+    box-shadow: .1vw .1vw .6vw rgb(2, 124, 63);
+    box-shadow: .2vw .2vw .6vw rgb(4, 173, 89);
+}
+
+footer {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vw;
+}
+
+footer a:hover {
+
+    font-size: 2.4vw;
+    color: springgreen;
+    filter: drop-shadow(1px 5px 1px rgb(0, 0, 0));
+}
+
+.line2 {
+    width: 25vw;
+    height: 1px;
+    background-color: white;
+}
+
+/* ============================================= */
+/*                  responsive                   */
+/* ============================================= */
+
+@media screen and (max-width: 1050px) {
+    nav {
+        height: 6vh;
+    }
+
+    .navLeft {
+        width: 50%;
+    }
+
+    .navLeft h2 {
+        font-size: 2.5vw;
+    }
+
+    .navRight {
+        width: 50%;
+    }
+
+    .navRight a {
+        font-size: 2.1vw;
+    }
+
+    .navRight a:hover {
+        font-size: 2.2vw;
+    }
+
+    /* ==============p1============= */
+
+    .cursor {
+        width: 45px;
+        height: 45px;
+    }
+
+    .texts {
+        padding-top: 25%;
+        margin-left: 3vw;
+    }
+
+    .texts h5 {
+        font-size: 3.5vw;
+    }
+
+    .texts h1 {
+        font-size: 4.5vw;
+    }
+
+    .texts h2 {
+        font-size: 3.5vw;
+    }
+
+    .social {
+        gap: 50px;
+        margin-top: 2vw;
+        margin-left: 1vw;
+        font-size: 5.2vw;
+    }
+
+    .button {
+        width: 14vw;
+        height: 5vw;
+    }
+
+    .button p {
+        font-size: 2.6vw;
+    }
+
+    .rightpic {
+        margin-left: -10%;
+    }
+
+    /* ==================p2=================== */
+
+    .page2 h2 {
+        font-size: 3.4vw;
+    }
+
+    .serviceInfo p {
+        font-size: 1.8vw;
+    }
+
+    .line {
+        width: 2.5vw;
+    }
+
+    .skillType {
+        width: 55%;
+    }
+
+    .skill {
+        margin-top: 6vh;
+    }
+
+    .icon {
+        width: 4vw;
+        height: 5vw;
+        font-size: 4.8vw;
+    }
+
+    .Name>h2 {
+        font-size: 3.2vw;
+    }
+
+    .Name>p {
+        font-size: 2vw;
+    }
+
+    .languages {
+        width: 40%;
+    }
+
+    .l h3 {
+        font-size: 2.2vh;
+    }
+
+    progress {
+        width: 82%;
+    }
+
+    .percentage p {
+        font-size: 2vw;
+    }
+
+    /* =========p3======================= */
+
+    .page3 {
+        height: 270vh;
+    }
+
+    .page3>h2 {
+        font-size: 3.4vw;
+    }
+
+    .page3>h3 {
+        font-size: 3.4vw;
+    }
+
+    .Designs {
+        height: 44vh;
+    }
+
+    .Designs .project {
+        width: 45%;
+    }
+
+    .Animations {
+        height: 44vh;
+    }
+
+    .Animations .project {
+        width: 42%;
+    }
+
+    .projects .project {
+        width: 47%;
+        height: 40%;
+    }
+
+    .projects .project:hover {
+        transform: scale(1.06);
+    }
+
+    .project h3 {
+        margin-top: 8px;
+        font-size: 2.8vw;
+    }
+
+    .project a {
+        font-size: 2.2vw;
+        gap: 8px;
+    }
+
+    /* ==============p4===================== */
+
+    .page4 {
+        height: 75vh;
+    }
+
+    .elips {
+        margin-top: 20%;
+        margin-left: -15%;
+        width: 130%;
+    }
+
+    .p4>h2 {
+        font-size: 3.4vw;
+    }
+
+    .details {
+        height: 50vh;
+    }
+
+    .info {
+        width: 49%;
+    }
+
+    .info p {
+        margin: 3% 0%;
+        font-size: 1.8vw;
+    }
+
+    .b1 {
+        gap: 20px;
+        margin: 3% 0%;
+    }
+
+    .b1 i {
+        font-size: 3.2vw;
+    }
+
+    .b2 h4 {
+        font-size: 2.3vw;
+    }
+
+    .b2 p {
+        font-size: 1.7vw;
+    }
+
+    .message {
+        margin-left: -5%;
+        width: 55%;
+    }
+
+    .message input {
+        height: 3.8vw;
+        font-size: 1.8vw;
+    }
+
+    .message textarea {
+        font-size: 1.9vw;
+    }
+
+    #done {
+        width: 35%;
+        font-size: 1.6vw;
+    }
+
+    footer a {
+        font-size: 2.6vw;
+    }
+
+    footer a:hover {
+        font-size: 2.7vw;
+    }
+
+    .line2 {
+        height: 1.5px;
+    }
+
+}
+
+/* ==================================== */
+/* =========== Mobile ================= */
+/* ==================================== */
+
+@media screen and (max-width: 580px) {
+    nav {
+        display: none;
+    }
+
+    /* ==============p1============= */
+
+    .page1 {
+        cursor: auto;
+        height: 70vh;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .port{
+        display: flex;
+    }
+
+    .texts {
+        width: 95%;
+        padding-top: 35%;
+        padding-left: 15%;
+    }
+
+    .texts h5 {
+        font-size: 5vw;
+    }
+
+    .texts h1 {
+        font-size: 6vw;
+        line-height: 1.2;
+    }
+
+    .texts h2 {
+        font-size: 4.9vw;
+        line-height: 1.2;
+    }
+
+    .social {
+        gap: 50px;
+        margin-top: 2vw;
+        margin-left: 1vw;
+        font-size: 6.5vw;
+    }
+
+    .button {
+        width: 15vw;
+        height: 5.5vw;
+    }
+
+    .button p {
+        font-size: 2.7vw;
+    }
+
+    .rightpic {
+        display: none;
+    }
+
+    /* ==================p2=================== */
+
+    .page2 h2 {
+        font-size: 5.6vw;
+    }
+
+    .serviceInfo p {
+        font-size: 3.8vw;
+    }
+
+    .line {
+        width: 2.5vw;
+    }
+
+    .skillSection {
+        margin-top: 2vh;
+        height: 80vh;
+        display: block;
+    }
+
+    .skillType {
+        width: 90%;
+        height: 40%;
+        padding-bottom: 2%;
+    }
+
+    .skill {
+        margin-top: 3vh;
+    }
+
+    .Name p {
+        font-size: 3.6vw;
+    }
+
+    .icon {
+        width: 4vw;
+        height: 5vw;
+        margin-right: 3vw;
+        font-size: 5.8vw;
+    }
+
+    .skillName {
+        align-items: center;
+    }
+
+    .languages {
+        width: 90%;
+        height: 60%;
+    }
+
+    .l {
+        margin-top: 2.5vh;
+    }
+
+    .percentage p {
+        font-size: 3.8vw;
+        margin-left: 1px;
+    }
+
+
+    /* =========p3======================= */
+
+    .page3 {
+        height: 145vh;
+    }
+
+    .page3>h2 {
+        font-size: 5.4vw;
+    }
+
+    .page3>h3 {
+        font-size: 5.4vw;
+        margin-bottom: 2vh;
+    }
+
+    .Designs {
+        height: 190%;
+    }
+
+    .Designs .project {
+        width: 90%;
+    }
+
+    .Animations {
+        height: 190%;
+    }
+
+    .Animations .project {
+        width: 90%;
+    }
+
+    .projects-mini {
+        height: 80%;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .projects .project {
+        display: none;
+    }
+
+
+    /* ==============p4===================== */
+
+    .page4 {
+        height: 100vh;
+    }
+
+    .elips {
+        margin-top: 50vh;
+        margin-left: -15%;
+        width: 130%;
+    }
+
+    .p4>h2 {
+        font-size: 5.4vw;
+    }
+
+    .details {
+        height: 78vh;
+        display: block;
+    }
+
+    .info {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .info p {
+        margin: 3% 0%;
+        font-size: 3.4vw;
+    }
+
+    .b1 i {
+        font-size: 5.2vw;
+    }
+
+    .b2 h4 {
+        font-size: 4.3vw;
+    }
+
+    .b2 p {
+        font-size: 3.9vw;
+    }
+
+    .message {
+        margin-left: 0%;
+        width: 100%;
+        height: 32vh;
+        margin-top: 1vh;
+    }
+
+    .message input {
+        height: 3.8vh;
+        font-size: 3.8vw;
+    }
+
+    .message textarea {
+        height: 8.5vh;
+        font-size: 4.4vw;
+    }
+
+    #done {
+        width: 35%;
+        height: 5vw;
+        font-size: 3.6vw;
+    }
+
+    footer {
+        width: 100%;
+        padding: 0 2%;
+        margin-top: 1.5vh;
+    }
+
+    footer a {
+        font-size: 4.2vw;
+    }
+
+    footer a:hover {
+        font-size: 4.3vw;
+    }
+
+    .line2 {
+        height: 1.5px;
+    }
+
+}
