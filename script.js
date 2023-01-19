@@ -26,7 +26,7 @@ gsap.to("#loader",{
 // typing animation
 
 var type = new Typed(".typing", {
-    strings: ["developer", "progmar", "designer"],
+    strings: ["developer", "programmer", "designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
