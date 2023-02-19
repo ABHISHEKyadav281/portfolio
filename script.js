@@ -130,7 +130,6 @@ arr.forEach(function (data) {
     <h3>${data.lang}</h3>
     <div class="percentage">
     <progress value="${data.perc}" max="100"></progress>
-     <p>${data.perc}%</p>
     </div>
 </div>`;
 });
@@ -147,8 +146,7 @@ arr2.forEach(function (data) {
     clutter += `<div class="l">
     <h3>${data.lang}</h3>
     <div class="percentage">
-    <progress value="${data.perc}" max="100"></progress>
-     <p>${data.perc}%</p>
+    <progress value="${data.perc}" max="100"></progress> 
     </div>
 </div>`;
 });
@@ -167,8 +165,7 @@ arr3.forEach(function (data) {
     clutter += `<div class="l">
     <h3>${data.lang}</h3>
     <div class="percentage">
-    <progress value="${data.perc}" max="100"></progress>
-     <p>${data.perc}%</p>
+    <progress value="${data.perc}" max="100"></progress>   
     </div>
 </div>`;
 });
