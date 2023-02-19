@@ -433,6 +433,7 @@ progress::-webkit-progress-value {
     height: 90%;
     display: inline-block;
     margin: 1%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 .project:hover {
@@ -464,6 +465,7 @@ progress::-webkit-progress-value {
     height: 92%;
     display: inline-block;
     margin: 1%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 .project video {
@@ -546,6 +548,7 @@ progress::-webkit-progress-value {
     height: 42%;
     display: inline-block;
     margin: 2% 1.5%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 
 }
 
