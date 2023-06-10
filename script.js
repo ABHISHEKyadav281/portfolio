@@ -158,7 +158,8 @@ var arr3 = [
     { lang: "NodeJS", perc: "70" },
     { lang: "ExpressJS", perc: "60" },
     { lang: "Java", perc: "60" },
-    { lang:"SQL", perc:"70" }
+    { lang:"MongoDB", perc:"70" },
+    { lang:"Firebase", perc:"50" }
 ]
 var clutter = "";
 arr3.forEach(function (data) {
