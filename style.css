@@ -288,6 +288,7 @@ span {
     align-items: center;
     justify-content: space-between;
     margin-top: 8vh;
+    cursor:pointer;
 }
 
 .icon {
@@ -299,6 +300,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
 }
 
