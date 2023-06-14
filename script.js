@@ -119,18 +119,15 @@ language3.style.display="flex";
 
 // language1
 var arr = [
-    { lang: "JavaScript", perc:"70" },
-    { lang:"HTML", perc:"90" },
-    { lang: "CSS", perc:"90" },
-    { lang: "React", perc:"20" }
+    {  img:"lang/js.webp"},
+    {img:"lang/css.webp"},
+    {img:"lang/html.webp" },
+    { img:"lang/react.webp"},
 ]
 var clutter = "";
 arr.forEach(function (data) {
     clutter += `<div class="l">
-    <h3>${data.lang}</h3>
-    <div class="percentage">
-    <progress value="${data.perc}" max="100"></progress>
-    </div>
+    <img src=${data.img} alt="">
 </div>`;
 });
 language1.innerHTML = clutter
@@ -138,16 +135,15 @@ language1.innerHTML = clutter
  
 // language2
 var arr2 = [
-    { lang: "Adobe XD", perc: "60" },
-    { lang:"Figma", perc:"50" }
+    {  img:"lang/xd.webp" },
+    {  img:"lang/ps.webp" },
+    {  img:"lang/figma.webp" },
 ]
 var clutter = "";
 arr2.forEach(function (data) {
     clutter += `<div class="l">
-    <h3>${data.lang}</h3>
-    <div class="percentage">
-    <progress value="${data.perc}" max="100"></progress> 
-    </div>
+    <img src=${data.img} alt="">
+   
 </div>`;
 });
 language2.innerHTML = clutter;
@@ -155,18 +151,18 @@ language2.innerHTML = clutter;
 
 // language3
 var arr3 = [
-    { lang: "NodeJS", perc: "70" },
-    { lang: "ExpressJS", perc: "60" },
-    { lang: "Java", perc: "60" },
-    { lang:"SQL", perc:"70" }
+    {  img:"lang/node.webp" },
+    {  img:"lang/mongodb.webp"},
+    {  img:"lang/java.webp" },
+    {  img:"lang/firebase.png" },
+    {  img:"lang/express.png" },
+    {  img:"lang/sql.png" },
 ]
 var clutter = "";
 arr3.forEach(function (data) {
     clutter += `<div class="l">
-    <h3>${data.lang}</h3>
-    <div class="percentage">
-    <progress value="${data.perc}" max="100"></progress>   
-    </div>
+    <img src=${data.img} alt="">
+    
 </div>`;
 });
 language3.innerHTML = clutter;
@@ -180,7 +176,6 @@ var Designs = [
     { pic: "./pics/d1.png"},
     { pic: "./pics/d2.png"},
     { pic: "./pics/d3.png"},
-    { pic: "./pics/d4.png"},
     { pic: "./pics/d5.png"},
     { pic:"./pics/d6.png"}
 ]
@@ -217,12 +212,12 @@ document.querySelector(".Animations").innerHTML = clutter;
 
 // projects-mini
 var projectMini = [
-    {  name: "Neverland",link:"https://abhishekyadav281.github.io/neverland/" },
-    {  name: "This is Digital" ,link:"https://abhishekyadav281.github.io/ThisIsDigital/"},
-    {  name: "Lagunitas" ,link:"https://abhishekyadav281.github.io/lagunitas/"},
-    {  name: "Whatsapp" ,link:" https://abhishekyadav281.github.io/wtsp/"},
-    {  name: "HairStudio",link:"https://abhishekyadav281.github.io/HairStudio/" },
-    {  name:"ShopNow",link:"https://abhishekyadav281.github.io/ShopNow/" }
+    {  name: "LearnTube" ,link:"https://github.com/ABHISHEKyadav281/LearnTube"},
+    {  name: "Taste Swings" ,link:"https://taste-swings.vercel.app/"},
+    {  name: "Traders",link:"https://traders-phi.vercel.app/" },
+    {  name: "Neverland" ,link:" https://neverland-eta.vercel.app/"},
+    {  name: "HairStudio",link:"https://hair-studio-nine.vercel.app/" },
+    {  name:"ShopNow",link:"https://shop-now-ashen.vercel.app/" }
 ]
 var clutter = "";
 projectMini.forEach(function (data) {
@@ -237,21 +232,21 @@ document.querySelector(".projects-mini").innerHTML = clutter;
 // projects
 
 var projects = [
-    { pic: "./pics/p1.png", name: "Neverland",link:"https://abhishekyadav281.github.io/neverland/" },
-    { pic: "./pics/p2.png", name: "This is Digital" ,link:"https://abhishekyadav281.github.io/ThisIsDigital/"},
-    { pic: "./pics/p3.png", name: "Lagunitas" ,link:"https://abhishekyadav281.github.io/lagunitas/"},
-    { pic: "./pics/p4.png", name: "Whatsapp" ,link:" https://abhishekyadav281.github.io/wtsp/"},
-    { pic: "./pics/p5.png", name: "HairStudio",link:"https://abhishekyadav281.github.io/HairStudio/" },
-    { pic:"./pics/p6.png", name:"ShopNow",link:"https://abhishekyadav281.github.io/ShopNow/" }
+    { pic: "./pics/p1.png", name: "LearnTube" ,link:"https://github.com/ABHISHEKyadav281/LearnTube"},
+    { pic: "./pics/p2.png", name: "Taste Swings" ,link:"https://taste-swings.vercel.app/"},
+    { pic: "./pics/p3.png", name: "Traders",link:"https://traders-phi.vercel.app/" },
+    { pic: "./pics/p4.png", name: "Neverland" ,link:" https://neverland-eta.vercel.app/"},
+    { pic: "./pics/p5.png", name: "HairStudio",link:"https://hair-studio-nine.vercel.app/" },
+    { pic:"./pics/p6.png", name:"ShopNow",link:"https://shop-now-ashen.vercel.app/" }
 ]
 var clutter = "";
 projects.forEach(function (data) {
     clutter += `<div class="project">
-    <div class="imgs">
+    <a href="${data.link}"> <div class="imgs">
         <img src="${data.pic}" alt="">
     </div>
     <h3>${data.name}</h3>
-    <a href="${data.link}">Demo <i class="ri-arrow-right-circle-line"></i></a>
+    </a>
 </div>`;
 });
 document.querySelector(".projects").innerHTML = clutter;
