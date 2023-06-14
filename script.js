@@ -122,7 +122,7 @@ var arr = [
     {  img:"lang/js.webp"},
     {img:"lang/css.webp"},
     {img:"lang/html.webp" },
-    { img:"lang/react.webp"},
+    { img:"lang/React.webp"},
 ]
 var clutter = "";
 arr.forEach(function (data) {
