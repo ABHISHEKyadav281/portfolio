@@ -199,6 +199,10 @@ span {
     background-color: rgb(2, 220, 111);
     border-radius: 30px;
 }
+.button a {
+    text-decoration: none;
+    color: white;
+}
 
 .button:hover {
     box-shadow: 1px 2px 4px rgb(252, 252, 252);
